@@ -1,7 +1,8 @@
 import java.util.Scanner;
-
+// SAKSHAM MANANDHAR C4 sakshammanandhar2007@gmail.com
 public class RickshawFare {
     public static void main(String[] args) {
+        
 
         Scanner sc = new Scanner(System.in);
 
