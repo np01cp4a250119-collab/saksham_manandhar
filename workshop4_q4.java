@@ -9,13 +9,13 @@ public class workshop4_q4
       int num =scanner.nextInt();
        
        if(num % 3==0 && num%5==0){
-           System.out.print("its divided by both 3 and 5");
+           System.out.println("its divided by both 3 and 5");
         }
         else if (num%3==0){
-            System.out.print("its divided only 3");
+            System.out.println("its divided only 3");
         }
         else if (num%5==0){
-            System.out.print("its only divided only 5");
+            System.out.println("its only divided only 5");
         }
        
     }

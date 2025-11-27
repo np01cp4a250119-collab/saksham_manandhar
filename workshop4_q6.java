@@ -1,24 +1,30 @@
 import java.util.Scanner;
 
-public class workshop4_q6
-{
-   public static void main(String[] args){
-      Scanner scanner= new Scanner(System.in);
+public class workshop4_q6{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
       
-      System.out.print( "enter number:");
-      int num =scanner.nextInt();
-       
-       if(num % 3==0 ){
-           if(num % 5==0 ){
-               System.out.print("its divided by both 3 and 5");
-           }
-           else{
-               System.out.print("only divided by 3");
-           }
-        }
-       else if(num%5==0){
-           System.out.print("its divided by only 5");
-       }
-       
+        System.out.print("Enter marked price of the item: ");
+        float mp = scanner.nextFloat();
+
+        System.out.print("Enter category of the item (A/B/C/D): ");
+        char category = scanner.next().charAt(0);
+
+        float discount = 0;
+
+        
+        if (category == 'A' || category == 'a') {
+            discount = 60;
+        } else if (category == 'B' || category == 'b') {
+            discount = 40;
+        } else if (category == 'C' || category == 'c') {
+            discount = 20;
+        } else if (category == 'D' || category == 'd') {
+            discount = 10;
+        } 
+        
+        float sp = mp - (mp * discount / 100);
+        System.out.println("Selling price of the item: Rs " + sp);
     }
 }

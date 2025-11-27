@@ -10,14 +10,14 @@ public class workshop4_q5
        
        if(num % 3==0 ){
            if(num % 5==0 ){
-               System.out.print("its divided by both 3 and 5");
+               System.out.println("its divided by both 3 and 5");
            }
            else{
-               System.out.print("only divided by 3");
+               System.out.println("only divided by 3");
            }
         }
        else if(num%5==0){
-           System.out.print("its divided by only 5");
+           System.out.println("its divided by only 5");
        }
        
     }
